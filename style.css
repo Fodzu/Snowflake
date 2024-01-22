@@ -71,9 +71,6 @@ body {
 }
 
 
-.navbar {
-    display: flex;
-}
 
 .dropdown {
     position: relative;
@@ -111,4 +108,3 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
