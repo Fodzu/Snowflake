@@ -24,6 +24,11 @@ body {
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease;
 }
+.fade-in {
+    opacity: 1;
+    visibility: visible;
+}
+
 
 
 .header {
