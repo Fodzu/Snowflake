@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,8 +6,9 @@
     <title>SnowFlake Studios</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Snowflake logo.png" type="image/png">
-    <script src="script.js"></script>
-    
+    <script defer src="script.js"></script>
+    <!-- Include Swup styles -->
+    <link defer rel="stylesheet" href="https://unpkg.com/swup@2.0.0/dist/swup.min.css">
 </head>
 <body>
 
@@ -37,9 +38,9 @@
     </header>
 
     <div class="cheat-sheet-container">
-        <main class="cheat-sheet">
+        <main class="cheat-sheet" id="swup">
             <h1>HTML Cheat Sheet</h1>
-            <!-- Your existing cheat sheet content -->
+            
             <section>
                 <h2>HTML Basic tags</h2>
                 <ul>
@@ -49,13 +50,10 @@
                     <li><code>&lt;Body&gt;</code> - Sets off the visible portion of the document</li>
                     <li><code>&lt;title&gt;</code> - Puts name of the document in the title bar</li>
                     
-                    
-                    
-                    
-                    
                     <!-- Add more items related to document structure -->
                 </ul>
             </section>
+            
             <section>
                 <h2>HTML Lists</h2>
                 <ul>
@@ -66,22 +64,24 @@
                     <li><code>&lt;dl&gt;</code> - Precedes each definition list</li>
                     <li><code>&lt;dt&gt;</code> - Precedes each definition term</li>
                     <li><code>&lt;dd&gt;</code> - Precedes each definition</li>
-
                 </ul>
             </section>
+
             <section>
                 <h2>HTML Links</h2>
                 <ul>
                     <li><code>&lt;a href="URL">clickable text /a&gt;</code> - Creates a hyperlink to a uniform resource locator</li>
                     <li><code>&lt;a href="mailto:EMAIL_ADDRESS">clickable text /a&gt;</code> - Creates a hyperlink to an email address</li>
-                    <li><code>&lt;a name="NAME">&gt;</code> Creates a target location within documetn</li>
+                    <li><code>&lt;a name="NAME">&gt;</code> Creates a target location within document</li>
                     <li><code>&lt;a href="#NAME">clickable text /a&gt;</code> - Creates a link to that target location</li>
                 </ul>
             </section>
+            
         </main>
 
         <main class="cheat-sheet">
             <h1></h1>
+            
             <section>
                 <h3>HTML Formatting</h3>
                 <ul>
@@ -97,11 +97,11 @@
                     <li><code>&lt;u&gt;</code> This tag is used to underline text written between it</li>
                     <li><code>&lt;sup&gt;</code> - displays the content slightly above the normal line</li>
                     <li><code>&lt;sub&gt;</code> - It displays the content slightly below the normal line</li>
-        
-                        <!-- Add more items related to headings -->
+            
+                    <!-- Add more items related to headings -->
                 </ul>
-                <!-- Add content for the additional cheat sheet -->
             </section>
+            
             <section>
                 <h3>HTML Text tags</h3>
                 <ul>
@@ -114,5 +114,14 @@
             </section>
         </main>
     </div>
+
+    <!-- Include Swup script -->
+    <script defer src="https://unpkg.com/swup@2.0.0/dist/swup.min.js"></script>
+    <!-- Initialize Swup -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const swup = new Swup();
+        });
+    </script>
 </body>
 </html>
