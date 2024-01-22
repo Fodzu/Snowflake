@@ -13,6 +13,16 @@ body {
     background-size: cover;
     background-position: center;
 }
+body {
+    transition: background-color 0.5s ease;
+}
+
+.transition-fade {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
 
 .header {
     position: fixed;
@@ -20,7 +30,7 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    background: transparent;
+    background: rgb(42, 42, 42);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,16 +97,17 @@ body {
 }
 
 .dropdown-content {
-    display: none;
+    display: none;  
     position: absolute;
     background-color: transparent;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
+    z-index: 4;
+    right: 0; /* Adjust this value based on the width of your button */
+    text-align: center;
 }
-
 .dropdown-content a {
     color: rgb(255, 249, 249);
-    padding: 12px 16px;
+    padding: 10px 16px;
     text-decoration: none;
     display: block;
 }
@@ -109,16 +120,43 @@ body {
     display: block;
 }
 
+
+
 .cheat-sheet {
     max-width: 800px;
-    margin: 50px auto;
+    margin-top: 80px; /* Adjust top margin as needed */
+    margin-left: 90px; /* Center the cheat-sheet section horizontally */
+    margin-right: auto;
     padding: 20px;
     background-color: transparent;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+
+.cheat-sheet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
 .cheat-sheet h1 {
-    color: White;
+    margin-bottom: 20px;
+    font-size: 38px;
+    color: white;
+}
+.cheat-sheet h2 {
+    margin: 0;
+    color: white;
+    margin-top: 40px;
+}
+
+.cheat-sheet h2 {
+    color: white;
+}
+.cheat-sheet h3 {
+    color: white;
+    margin-top: 98px;
+    font-size: 26px;
 }
 
 .cheat-sheet ul {
@@ -128,6 +166,13 @@ body {
 
 .cheat-sheet li {
     margin-bottom: 10px;
-    color: #555;
+    color: #d8d8d8;
 }
 
+.cheat-sheet-container {
+    display: flex;
+    justify-content: center; /* Adjust as needed */
+    align-items: flex-start;
+    gap: 40px;
+
+}

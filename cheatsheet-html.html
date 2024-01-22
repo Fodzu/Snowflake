@@ -6,7 +6,6 @@
     <title>HTML Cheat Sheet</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <header class="header">
@@ -34,27 +33,84 @@
         </nav>
     </header>
 
-    <main class="cheat-sheet">
-        <h1>HTML Cheat Sheet</h1>
-        <ul>
-            <li><strong>&lt;!DOCTYPE html&gt;</strong> - Declaration for HTML5</li>
-            <li><strong>&lt;html&gt;</strong> - Root element</li>
-            <li><strong>&lt;head&gt;</strong> - Document metadata</li>
-            <li><strong>&lt;title&gt;</strong> - Document title</li>
-            <li><strong>&lt;body&gt;</strong> - Document body</li>
-            <li><strong>&lt;h1&gt; to &lt;h6&gt;</strong> - Headings</li>
-            <li><strong>&lt;p&gt;</strong> - Paragraph</li>
-            <li><strong>&lt;a&gt;</strong> - Anchor (link)</li>
-            <li><strong>&lt;img&gt;</strong> - Image</li>
-            <li><strong>&lt;ul&gt;</strong> - Unordered list</li>
-            <li><strong>&lt;ol&gt;</strong> - Ordered list</li>
-            <li><strong>&lt;li&gt;</strong> - List item</li>
-            <li><strong>&lt;div&gt;</strong> - Division (container)</li>
-            <li><strong>&lt;span&gt;</strong> - Inline container</li>
-            <!-- Add more HTML elements as needed -->
-        </ul>
-    </main>
+    <div class="cheat-sheet-container">
+        <main class="cheat-sheet">
+            <h1>HTML Cheat Sheet</h1>
+            <!-- Your existing cheat sheet content -->
+            <section>
+                <h2>HTML Basic tags</h2>
+                <ul>
+                    <li><code>&lt;!DOCTYPE html&gt;</code> - Defines the document type and version of HTML</li>
+                    <li><code>&lt;html&gt;</code> - The root element of an HTML page</li>
+                    <li><code>&lt;Head&gt;</code> - Sets off the title and other info that isn't displayed</li>
+                    <li><code>&lt;Body&gt;</code> - Sets off the visible portion of the document</li>
+                    <li><code>&lt;title&gt;</code> - Puts name of the document in the title bar</li>
+                    
+                    
+                    
+                    
+                    
+                    <!-- Add more items related to document structure -->
+                </ul>
+            </section>
+            <section>
+                <h2>HTML Lists</h2>
+                <ul>
+                    <li><code>&lt;ul&gt;</code> - Creates an unordered list</li>
+                    <li><code>&lt;ol start => ol&gt;</code> - Creates an ordered list (start= xx where xx is counting numbers)</li>
+                    <li><code>&lt;li&gt;</code> - Encompasses each list item </li>
+                    <li><code>&lt;dl&gt;</code> - Creates a definition list</li>
+                    <li><code>&lt;dl&gt;</code> - Precedes each definition list</li>
+                    <li><code>&lt;dt&gt;</code> - Precedes each definition term</li>
+                    <li><code>&lt;dd&gt;</code> - Precedes each definition</li>
+
+                </ul>
+            </section>
+            <section>
+                <h2>HTML Links</h2>
+                <ul>
+                    <li><code>&lt;a href="URL">clickable text /a&gt;</code> - Creates a hyperlink to a uniform resource locator</li>
+                    <li><code>&lt;a href="mailto:EMAIL_ADDRESS">clickable text /a&gt;</code> - Creates a hyperlink to an email address</li>
+                    <li><code>&lt;a name="NAME">&gt;</code> Creates a target location within documetn</li>
+                    <li><code>&lt;a href="#NAME">clickable text /a&gt;</code> - Creates a link to that target location</li>
+                </ul>
+            </section>
+        </main>
+
+        <main class="cheat-sheet">
+            <h1></h1>
+            <section>
+                <h3>HTML Formatting</h3>
+                <ul>
+                    <li><code>&lt;p&gt;</code> - Creates a new paragraph</li>
+                    <li><code>&lt;br&gt;</code> - Inserts a line break</li>
+                    <li><code>&lt;blockquote&gt;;</code> - Puts content in a quote, indents text from both sides</li>
+                    <li><code>&lt;div&gt;</code> - Format block content with CSS</li>
+                    <li><code>&lt;span&gt;</code> - Format inline content with CSS</li>
+                    <li><code>&lt;b&gt;</code> - Turns text into bold</li>
+                    <li><code>&lt;strong&gt;</code> - tells the browser that the text is important</li>
+                    <li><code>&lt;i&gt;</code> - Turns text into italic</li>
+                    <li><code>&lt;mark&gt;</code> - Highlights the text</li>
+                    <li><code>&lt;u&gt;</code> This tag is used to underline text written between it</li>
+                    <li><code>&lt;sup&gt;</code> - displays the content slightly above the normal line</li>
+                    <li><code>&lt;sub&gt;</code> - It displays the content slightly below the normal line</li>
+        
+                        <!-- Add more items related to headings -->
+                </ul>
+                <!-- Add content for the additional cheat sheet -->
+            </section>
+            <section>
+                <h3>HTML Text tags</h3>
+                <ul>
+                    <li><code>&lt;pre&gt;</code> - Creates preformatted text</li>
+                    <li><code>&lt;h1 => h6&gt;</code> - Creates headlines h1 = largest , h6 = smallest</li>
+                    <li><code>&lt;font size&gt;</code> - Sets size of the font 1 to 7 (use CSS instead)</li>
+                    <li><code>&lt;font color&gt;</code> - Sets font color (just use CSS)</li>
+                    <li><code>&lt;font face&gt;</code> - Defines the font used (just CSS please)</li>
+                </ul>
+            </section>
+        </main>
+    </div>
 
 </body>
-
 </html>
