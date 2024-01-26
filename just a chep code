@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnowFlake Studios</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Snowflake logo.png" type="image/png">
+    <script src="script.js"></script>
+    
+</head>
+<body class="transition-fade">
+
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="Snowflake logo.png" alt="Logo Image">
+            SnowFlake Studios
+        </a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="#"></a>
+
+            <!-- Dropdown Structure -->
+            <div class="dropdown">
+                <button class="dropbtn">Cheat Sheet</button>
+                <div class="dropdown-content">
+                    <a href="cheatsheet-html.html">HTML</a>
+                    <a href="cheatsheet-css.html">CSS</a>
+                    <a href="cheatsheet-js.html">JavaScript</a>
+                </div>
+            </div>
+
+            <a href="#"></a>
+            <!-- Add more navigation items as needed -->
+        </nav>
+    </header>
+
+    <div class="cheat-sheet-container">
+        <main class="cheat-sheet">
+            <!--Main Name here-->
+            <h1></h1>
+            <section>
+                <h2> </h2>
+                <ul>
+                    <li><code> </code> </li>
+                    <li><code> </code> </li>
+                    <li><code> </code> </li>
+                    <li><code> </code> </li>
+                    <li><code> </code> </li>
+                    <li><code> </code> </li>
+                    <li><code> </code> </li>
+                    <li><code> </code> </li>
+                    
+                    
+                    
+                    
+                    <!-- Add more items related to document structure -->
+                </ul>
+            </section>
+            <section>
+                <h2> </h2>
+                <ul>
+                    <li><code> </code> </li>
+                    <li><code> </code> </li>
+                    <li><code> </code> </li>
+
+                </ul>
+            </section>
+            <section>
+                <h2> </h2>
+                <ul>
+                    <li><code> </code> </li>
+                    <li><code> </code> </li>
+                    <li><code> </code> </li>
+                    <li><code> </code> </li>
+                </ul>
+            </section>
+        </main>
+
+        <main class="cheat-sheet">
+            <h1></h1>
+            <section>
+                <h3> </h3>
+                <ul>
+                    <li><code> </code> </li>
+                    <li><code> </code> </li>
+                    <li><code> </code> </li>
+                    <li><code> </code> </li>
+                    <li><code> </code> </li>
+                    <li><code> </code> </li>
+                    <li><code> </code> </li>
+                    <li><code> </code> </li>
+                    <li><code> </code> </li>
+                    <li><code> </code> </li>
+                    <li><code> </code> </li>
+                    <li><code> </code> </li>
+        
+                        <!-- Add more items related to headings -->
+                </ul>
+                <!-- Add content for the additional cheat sheet -->
+            </section>
+            <section>
+                <h3> </h3>
+                <ul>
+                    <li><code> </code>  </li>
+                    <li><code> </code>  </li>
+                    <li><code> </code>  </li>
+                    <li><code> </code>  </li>
+                    <li><code> </code>  </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
