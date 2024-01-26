@@ -1,13 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
     var body = document.body;
 
-    // Remove the 'transition-fade' class to initiate the fade-in transition
-    body.classList.remove('transition-fade');
-
-    // Adding the fade-in class after a small delay to allow fade-out to complete
+    // Adding a delay before adding the fade-in class
     setTimeout(function () {
-        body.classList.add('fade-in');
-    }, 500); // Adjust the delay time as needed (500ms in this example)
+        body.classList.remove('transition-fade'); // Remove fade-out class
+        body.classList.add('fade-in'); // Add fade-in class
+    }, 100); // Adjust the delay time as needed (100ms in this example)
 
     var links = document.querySelectorAll('.navbar a');
 
@@ -33,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (event.persisted) {
             // Remove the 'transition-fade' class to initiate the fade-in transition
             body.classList.remove('transition-fade');
+            body.classList.add('fade-in'); // Ensure fade-in class is added
         }
     });
 });

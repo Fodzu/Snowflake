@@ -119,14 +119,13 @@ body {
 
 .cheat-sheet {
     max-width: 800px;
-    margin-top: 80px; /* Adjust top margin as needed */
-    margin-left: 90px; /* Center the cheat-sheet section horizontally */
+    margin-top: 80px;
+    margin-left: 90px;
     margin-right: auto;
     padding: 20px;
     background-color: transparent;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 
 .cheat-sheet-header {
     display: flex;
@@ -139,15 +138,13 @@ body {
     font-size: 38px;
     color: white;
 }
+
 .cheat-sheet h2 {
     margin: 0;
     color: white;
     margin-top: 40px;
 }
 
-.cheat-sheet h2 {
-    color: white;
-}
 .cheat-sheet h3 {
     color: white;
     margin-top: 98px;
@@ -166,10 +163,9 @@ body {
 
 .cheat-sheet-container {
     display: flex;
-    justify-content: center; /* Adjust as needed */
+    justify-content: center; 
     align-items: flex-start;
     gap: 40px;
-
 }
 
 /* Transition code */
