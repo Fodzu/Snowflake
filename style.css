@@ -14,7 +14,6 @@ body {
     background: url('Backgroundgif.gif') no-repeat;
     background-size: cover;
     background-position: center;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 /* Nav bar code */
 
@@ -175,7 +174,13 @@ body {
 
 /* Transition code */
 
-.transition-fade {
+body {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+body.transition-fade {
     opacity: 0;
     visibility: hidden;
 }
