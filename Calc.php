@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SnowFlake Studio</title>
-    <link rel="preload" href="style.css" as="style">
+    <title>SnowFlake Calculator</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="Snowflake logo.png" type="image/png">
+    <link rel="icon" href="C:\Users\denij\Desktop\Stuff\Snowflake studios\Project Snow Web\Snowflake logo.png" type="image/png">
     <script src="script.js"></script>
 </head>
+<body class="transition-fade">
 
-<body>
-
-    <header class="header">
+<header class="header">
         <a href="#" class="logo">
             <img src="Snowflake logo.png" alt="Logo Image">
             SnowFlake Studio
@@ -34,17 +32,50 @@
                 </div>
             </div>
 
-            
             <div class="dropdown2">
                 <button class="dropbtn2">Projects</button>
                 <div class="dropdown-content">
-                    <a href="index.php">Calculator</a>
+                    <a href="http://localhost:8080">Calculator</a>
                     <!-- Add more navigation items as needed -->
                 </div>
-            </div>   
+            </div>            
         </nav>
     </header>
 
-</body>
+<div class="calculator">
+    <?php
+    if (isset($_POST['operator'])) {
+        $num1 = $_POST['num1'];
+        $num2 = $_POST['num2'];
+        $operator = $_POST['operator'];
 
+        switch ($operator) {
+            case '+':
+                $result = $num1 + $num2;
+                break;
+            case '-':
+                $result = $num1 - $num2;
+                break;
+            case '*':
+                $result = $num1 * $num2;
+                break;
+            case '/':
+                if ($num2 == 0) {
+                    $result = "Cannot divide by zero";
+                } else {
+                    $result = $num1 / $num2;
+                }
+                break;
+            default:
+                $result = "Invalid operator";
+                break;
+        }
+
+        echo "<h2>Result: $result</h2>";
+    }
+    ?>
+    <a href="index.php">Go Back</a>
+</div>
+
+</body>
 </html>

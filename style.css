@@ -88,6 +88,7 @@ body {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    position: relative;
 }
 
 .dropdown-content {
@@ -96,8 +97,9 @@ body {
     background-color: transparent;
     box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
     z-index: 4;
-    right: 0; /* Adjust this value based on the width of your button */
+    right: -10%;
     text-align: center;
+    width: auto;
 }
 .dropdown-content a {
     color: rgb(255, 249, 249);
@@ -113,6 +115,54 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/* Dropdown 2 button */
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.dropbtn2 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.dropdown2 .dropdown-content {
+    display: none;  
+    position: absolute;
+    background-color: transparent;
+    box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
+    z-index: 4;
+    top: 100%; 
+    right: -50%;
+    text-align: center;
+    width: auto; 
+}
+
+
+
+.dropdown2 .dropdown-content a {
+    color: rgb(255, 249, 249);
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown2 .dropdown-content a:hover {
+    background-color: #434242;
+}
+
+.dropdown2:hover .dropdown-content {
+    display: block;
+}
+
 
 /* Cheat sheet list code*/
 
@@ -184,4 +234,37 @@ body.transition-fade {
 .fade-in {
     opacity: 1;
     visibility: visible;
+}
+
+
+/* calculator style code */
+
+.calculator {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calculator input,
+.calculator select,
+.calculator button {
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.calculator button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calculator button:hover {
+    background-color: #0056b3;
 }
