@@ -11,10 +11,11 @@
 
 body {
     min-height: 100vh;
-    background: url('Backgroundgif.gif') no-repeat;
+    background: url('tempbackground.jpg') no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center;  
 }
+
 /* Nav bar code */
 
 .header {
@@ -23,7 +24,7 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    background: rgb(3, 3, 3);
+    background: rgb(42, 42, 42);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -110,44 +111,7 @@ body {
     color: #b4b4b4; 
 }
 
-/* buttons Code */ 
-.buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px; /* Adjust margin as needed */
-}
 
-.btn {
-    position: relative;
-    padding: 10px 20px;
-    margin: 0 10px; /* Adjust margin as needed */
-    font-size: 18px;
-    color: #fff;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-}
-
-.btn::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #fff;
-    transition: width 0.3s ease; /* Apply transition to width */
-}
-
-.btn:hover::before {
-    width: 100%; /* Expand the width on hover */
-}
-
-.buttons a {
-    text-decoration: none;
-    color: inherit;
-}
 /* Drop Down Code */
 
 .dropdown {

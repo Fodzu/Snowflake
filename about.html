@@ -3,38 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SnowFlake Studios</title>
+    <title>SnowFlake Studio</title>
     <link rel="preload" href="style.css" as="style">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Snowflake logo.png" type="image/png">
+    <script src="script.js"></script>
 </head>
 
+<body class="transition-fade">
 
-<body>
+<header class="header">
+    <a href="#" class="logo">
+        <img src="Snowflake logo.png" alt="Logo Image">
+        SnowFlake Studio
+    </a>
 
-    <header class="header">
-        <header class="header">
-            <a href="#" class="logo">
-                <img src="Snowflake logo.png" alt="Logo Image">
-                SnowFlake Studios 
-            </a>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
 
-        <nav class="navbar">
-            <a href="index.html">Home</a>    
-            <a href="about.html">About</a>
-            <a href="games.html">Games</a>
-            <a href="contact.html">Contact</a>
-            <a href="Cheat Sheet.html">Cheat Sheet</a>
+        <!-- Dropdown Structure -->
+        <div class="dropdown">
+            <button class="dropbtn">Projects</button>
+            <div class="dropdown-content">
+                <a href="projectsnowflake.html">Project Snowflake</a>
+                <!-- Add more languages as needed -->
+            </div>
+        </div>
 
-        
-        
-            
-            
-        </nav>
-    </header>
-    
+        <div class="dropdown2">
+            <button class="dropbtn2"></button>
+            <div class="dropdown-content">
+                <a href="cheatsheet-html.html">HTML</a>
+                <a href="cheatsheet-css.html">CSS</a>
+                <a href="cheatsheet-php.html">PHP</a>
+                <a href="cheatsheet-js.html">JavaScript</a>
+                <!-- Add more navigation items as needed -->
+            </div>
+        </div>          
+    </nav>
+</header>
+
+<div class="content">
+    <h1>WHO WE ARE</h1>
+    <p></p>
+    <div class="profiles">
+        <div class="profile">
+            <img src="Fodzu Pfp.jpg" alt="Profile 1">
+            <p>Fodzu</p>
+            <p>Owner</p>
+        </div>
+        <div class="profile">
+            <img src="Omegapfp.jpeg" alt="Profile 2">
+            <p>Omega</p>
+            <p>Co-Owner</p>
+        </div>
+    </div>
+</div>
 </body>
-
-
-
 </html>
